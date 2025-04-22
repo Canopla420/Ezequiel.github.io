@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Especifica la codificación de caracteres UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Configura el diseño para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Enlace a la librería de iconos Font Awesome para usar iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Enlace al archivo CSS externo que contiene los estilos -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Sección principal que contiene la información personal -->
     <section class="box">
-        <img src="imagenes/yo.jpg" width="180" alt="" class="box-img">
+        <!-- Imagen de perfil redonda -->
+        <img src="imagenes/yo.jpg" width="180" alt="Foto de Ezequiel Cano" class="box-img"/>
+        <!-- Título con el nombre -->
         <h1>Ezequiel Cano</h1>
-        <h2>Software Engineer - Web Developer</h2>
+        <!-- Subtítulo con la profesión -->
+        <h2>Software Developer</h2>
+        <!-- Descripción sobre la formación y objetivos del usuario -->
         <p>Soy estudiante de desarrollo de software en ITEC "El Molino". Me apasiona la tecnología, el diseño web y todo lo relacionado con la innovación. Actualmente estoy aprendiendo HTML, CSS, Python y bases de datos como MySQL.</p>
         <p>Mi objetivo es convertirme en un desarrollador profesional y poder aportar soluciones tecnológicas útiles a las personas y empresas.</p>
+        <!-- Lista de redes sociales con enlaces a perfiles -->
         <ul>
             <li><a href="https://www.instagram.com/ezequieeel_cano/"><i class="fa-brands fa-square-instagram"></i></a></li>
             <li><a href="https://www.facebook.com/profile.php?id=61562037068158&locale=es_LA"><i class="fa-brands fa-square-facebook"></i></a></li>
             <li><a href="https://www.linkedin.com/in/ezequiel-cano-667886303/"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="https://github.com/Canopla420"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+        <!-- Enlace a WhatsApp para contacto directo -->
+        <a class="btn-whatsapp" href="https://wa.me/5493496501380" target="_blank">
+            <i class="fab fa-whatsapp"></i> Contactame por WhatsApp
+        </a>        
+        <!-- Sección de proyectos -->
+        <section class="projects">
+            <h2>Mis Proyectos</h2>
+            <div class="project-list">
+                <!-- Tarjeta de proyecto individual -->
+                <div class="project-card">
+                    <h3>Diseño Web Personal</h3>
+                    <p>Mi primera página web usando solo HTML y CSS.</p>
+                    <a href="https://github.com/Canopla420" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <section class="contact-form">
+                <h2>Contacto</h2>
+                <form action="https://formsubmit.co/ecanoalumno@itec-elmolino.edu.ar" method="POST">
+                    <!-- Campo para ingresar el nombre -->
+                    <input type="text" name="nombre" placeholder="Tu nombre">
+                    <!-- Campo para ingresar el correo electrónico -->
+                    <input type="email" name="correo" placeholder="Tu correo">
+                    <!-- Área de texto para ingresar un mensaje -->
+                    <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+                    <!-- Botón para enviar el formulario -->
+                    <button type="submit">Enviar</button>
+                  </form>
+            </section>
+        </section>
     </section>
+    <!-- Pie de página con el copyright -->
+    <footer>
+        <p>&copy; 2025 Ezequiel Cano. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
