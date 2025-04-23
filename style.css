@@ -1,0 +1,218 @@
+/* Reset general: elimina márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y tipografía del cuerpo */
+body {
+    background: url(imagenes/fondo3.jpg) no-repeat;
+    background-size: cover;
+    font-family: "Century Gothic", sans-serif;
+}
+
+/* Caja principal que contiene la información personal */
+.box {
+    width: 650px;
+    background: rgba(0, 0, 0, .4);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    animation: fadeIn 1.2s ease-in-out;  /* Animación de entrada */
+}
+
+/* Imagen redonda */
+.box-img {
+    border-radius: 50%;
+}
+
+/* Estilo para los títulos */
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 30px 0 20px;
+    transition: color 0.3s ease; /* Transición suave en el color */
+}
+
+/* Efecto hover para el título principal */
+.box h1:hover {
+    color: #ffffff;
+}
+
+/* Estilo para subtítulo */
+.box h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para el subtítulo */
+.box h2:hover {
+    color: #ffffff;
+}
+
+/* Estilo para los párrafos */
+.box p {
+    text-align: justify;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.box ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.box ul li {
+    display: inline-block;
+}
+
+.box ul li a {
+    color: white;
+    font-size: 45px;
+    padding: 10px 5px;
+    display: block;
+    transition: all 0.5s ease-in-out; /* Transición suave al hacer hover */
+}
+
+/* Efecto hover en los iconos de redes sociales */
+.box ul li a:hover {
+    color: #b9b9b9;
+    transform: scale(1.1);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividad: Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    .box {
+        width: 90%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .box h1 {
+        font-size: 26px;
+    }
+
+    .box h2 {
+        font-size: 16px;
+    }
+
+    .box ul li a {
+        font-size: 32px;
+    }
+}
+
+/* Estilo para el botón de WhatsApp */
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo del ícono dentro del botón */
+.btn-whatsapp i {
+    margin-right: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* Efecto hover en el botón de WhatsApp */
+.btn-whatsapp:hover {
+    background-color: #1ebe5b;
+    transform: scale(1.05);
+}
+
+/* Estilo para la sección de proyectos */
+.projects {
+    margin-top: 40px;  /* Espaciado superior entre la sección de contacto */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+/* Estilo para la tarjeta de proyecto */
+.project-card {
+    background-color: hsl(120, 97%, 49%)/* Fondo translúcido */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center; /* Esto centra todo el contenido dentro de la tarjeta */
+}
+
+/* Estilo adicional para los elementos dentro de la tarjeta */
+.project-card h3, .project-card p {
+    text-align: center; /* Asegura que los títulos y párrafos estén centrados */
+}
+
+
+.project-card a {
+    color: #7cbb45;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: white;
+}
+
+/* Estilo para el formulario de contacto */
+.contact-form {
+    margin-top: 60px;/* Aquí ajustamos el margen superior para darle más separación */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
