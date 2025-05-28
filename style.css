@@ -8,7 +8,7 @@
 
 /* Fondo y tipografía del cuerpo */
 body {
-    background: url(imagenes/fondo3.jpg) no-repeat;
+    background: url(imagenes/fondo4.jpg) no-repeat;
     background-size: cover;
     font-family: "Century Gothic", sans-serif;
 }
@@ -151,10 +151,14 @@ body {
 
 /* Estilo para la sección de proyectos */
 .projects {
-    margin-top: 40px;  /* Espaciado superior entre la sección de contacto */
+    margin-top: 20px;  /* Espaciado superior entre la sección de contacto */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Espacio entre proyectos */
+    align-items: center;
 }
 
 .projects h2 {
@@ -165,15 +169,25 @@ body {
 
 /* Estilo para la tarjeta de proyecto */
 .project-card {
-    background-color: hsl(120, 97%, 49%)/* Fondo translúcido */
-    padding: 15px; /* Espaciado interno */
-    border-radius: 15px; /* Bordes redondeados */
-    text-align: center; /* Esto centra todo el contenido dentro de la tarjeta */
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff23;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 5px;
+    transition: transform 0.2s;
 }
 
 /* Estilo adicional para los elementos dentro de la tarjeta */
 .project-card h3, .project-card p {
     text-align: center; /* Asegura que los títulos y párrafos estén centrados */
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Aumenta el espacio entre proyectos */
+    align-items: center;
 }
 
 
@@ -182,10 +196,13 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    display: inline-block;
+    margin-top: 18px; /* Separación extra arriba del enlace */
 }
 
 .project-card a:hover {
     color: white;
+    transform: translateY(-5px) scale(1.02);
 }
 
 /* Estilo para el formulario de contacto */
